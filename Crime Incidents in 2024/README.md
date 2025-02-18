@@ -14,7 +14,7 @@ This project focuses on the geospatial analysis of crime incidents reported in t
 
 ## 📑 Geospatial Data Attributes
 
-* The dataset contains location-based attributes that enable geospatial analysis:
+The dataset contains location-based attributes that enable geospatial analysis:
 
 * X, Y: Coordinates of the crime location.
 
@@ -26,7 +26,7 @@ This project focuses on the geospatial analysis of crime incidents reported in t
 
 * ANC: Advisory Neighborhood Commission area where the crime took place.
 
-* DISTRICT: Police district responsible for handling the crime.
+* DISTRICT: The police district responsible for handling the crime.
 
 * PSA: Police Service Area covering the incident location.
 
@@ -42,7 +42,7 @@ This project focuses on the geospatial analysis of crime incidents reported in t
 
 ## 🔍 Geospatial Analyses
 
-* Using this dataset, we focus on spatial analyses such as:
+Using this dataset, we focus on spatial analyses such as:
 
 * Crime Hotspot Mapping: Identify high-crime areas using geospatial clustering techniques.
 
