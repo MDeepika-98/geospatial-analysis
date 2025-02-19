@@ -16,29 +16,77 @@ This project focuses on the geospatial analysis of crime incidents reported in t
 
 The dataset contains location-based attributes that enable geospatial analysis:
 
-* X, Y: Coordinates of the crime location.
+* X:
+The X coordinate for the incident location based on the underlying spatial reference system.
 
-* LATITUDE, LONGITUDE: Geographical coordinates for crime mapping.
+* Y:
+The Y coordinate for the incident location.
 
-* XBLOCK, YBLOCK: Geospatial block coordinates for spatial clustering.
+* CCN:
+Crime Case Number – a unique identifier for each recorded incident.
 
-* WARD: Political ward where the crime occurred.
+* REPORT_DAT:
+Date and time when the incident was reported. This includes time zone information.
 
-* ANC: Advisory Neighborhood Commission area where the crime took place.
+* SHIFT:
+The operational shift during which the incident occurred (e.g., DAY, EVENING, MIDNIGHT).
 
-* DISTRICT: The police district responsible for handling the crime.
+* METHOD:
+The method or instrument associated with the incident (e.g., GUN, KNIFE, OTHERS).
 
-* PSA: Police Service Area covering the incident location.
+* OFFENSE:
+A more detailed description of the crime type, such as THEFT (with additional context like F/AUTO or OTHER) or HOMICIDE.
 
-* NEIGHBORHOOD_CLUSTER: Cluster of neighborhoods related to the crime location.
+* BLOCK:
+A descriptive label for the street block where the incident occurred (e.g., “1100 - 1199 BLOCK OF 18TH STREET NW”).
 
-* BLOCK_GROUP: Census-defined block group identifier.
+* XBLOCK & YBLOCK:
+Coordinates corresponding to the block location, typically mirroring the primary X and Y values.
 
-* CENSUS_TRACT: Census tract where the crime occurred.
+* WARD:
+The ward or district number where the incident was recorded.
 
-* VOTING_PRECINCT: Voting precinct associated with the location.
+* ANC:
+Advisory Neighborhood Commission designation, which provides additional local administrative context.
 
-* BID: Business Improvement District identifier (if applicable).
+* DISTRICT:
+A numerical value representing the broader jurisdictional district.
+
+* PSA:
+Public Safety Area code – an administrative designation used for resource allocation and reporting.
+
+* NEIGHBORHOOD_CLUSTER:
+A label that groups incidents by neighborhood clusters (e.g., Cluster 6, Cluster 5).
+
+* BLOCK_GROUP:
+A grouping code for blocks that often follows a local classification system.
+
+* CENSUS_TRACT:
+The census tract number, which can be used for demographic analysis.
+
+* VOTING_PRECINCT:
+The designated voting precinct area associated with the incident location.
+
+* LATITUDE:
+The latitude coordinate for mapping the incident.
+
+* LONGITUDE:
+The longitude coordinate for mapping the incident.
+
+* BID:
+A Business Improvement District or similar area identifier that may indicate a specific urban area (e.g., “GOLDEN TRIANGLE”, “DOWNTOWN”).
+
+* START_DATE:
+The starting time of the incident (if applicable).
+
+* END_DATE:
+The ending time of the incident (if applicable).
+
+* OBJECTID:
+An internal unique identifier for the record.
+
+* OCTO_RECORD_ID:
+This column was removed from the dataset because it did not contain any values.
 
 ## 🔍 Geospatial Analyses
 
